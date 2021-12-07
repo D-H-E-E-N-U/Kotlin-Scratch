@@ -1,0 +1,30 @@
+fun main() {
+    val byte_literal: Byte = -128
+    val short_literal: Short = -32767
+    val integer_literal: Int = 123
+    val long_literal: Long = 4567890L
+    val floating_point_literal: Float = 12.34F
+    val double_literal: Double = 567.890
+    val character_literal: Char = 'P'
+    val string_literal: String = "Dheena"
+    val mutli_line_string: String = """I
+        |am
+        |an
+        |Android
+        |Developer
+        |Designer
+        |DevOps Engineer ..!!
+    """.trimMargin()
+    val boolean_literal: Boolean = true
+
+    println("The byte value is: $byte_literal")
+    println("The short value is: $short_literal")
+    println("The integer value is: $integer_literal")
+    println("The long value is: $long_literal")
+    println("The floating-point value is: $floating_point_literal")
+    println("The double value is: $double_literal")
+    println("The character is: $character_literal")
+    println("The string is: $string_literal")
+    println("The multi-line string is: $mutli_line_string")
+    println("The boolean value is: $boolean_literal")
+}
