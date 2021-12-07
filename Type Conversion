@@ -1,0 +1,24 @@
+import java.util.Scanner
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the integer: ")
+    val integer_input = user_input.nextInt()
+    val integer_to_character = integer_input.toChar()
+    println("The converted integer to character literal is: $integer_to_character")
+
+    print("Enter the String: ")
+    val string_input = readLine()
+    val string_to_integer = string_input!!.toInt()
+    println("The converted string to integer literal is: $string_to_integer")
+
+    print("Enter the Floating - Point Literal: ")
+    val float_input = user_input.nextFloat()
+    val float_to_Long = float_input.toLong()
+    println("The converted float to long literal is: $float_to_Long")
+
+    print("Enter the boolean: ")
+    val boolean_input = user_input.nextBoolean()
+    val boolean_to_string = boolean_input.toString()
+    println("The converted boolean to string literal is: $boolean_to_string")
+}
