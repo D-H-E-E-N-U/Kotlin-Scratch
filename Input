@@ -1,0 +1,31 @@
+import java.util.Scanner
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the byte input: ")
+    val byte_input = user_input.nextByte()
+
+    print("Enter the short input: ")
+    val short_input = user_input.nextShort()
+
+    print("Enter the integer input: ")
+    val integer_input = user_input.nextInt()
+
+    print("Enter the long input: ")
+    val long_input = user_input.nextLong()
+
+    print("Enter the float input: ")
+    val float_input = user_input.nextFloat()
+
+    print("Enter the double input: ")
+    val double_input = user_input.nextDouble()
+
+    print("Enter the boolean input: ")
+    val boolean_input = user_input.nextBoolean()
+
+    print("Enter the character: ")
+    val character_input = user_input.next().single()
+
+    print("Enter the string: ")
+    val string_input = readLine()
+}
