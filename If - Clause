@@ -1,0 +1,41 @@
+import java.util.Scanner
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the current year: ")
+    val current_year = user_input.nextInt()
+    
+    // If-Else :-
+    
+    if (integer_input.mod(2).equals(0)) {
+        println("The entered integer value is Even.")
+    } else {
+        println("The entered integer value is Odd.")
+    }
+    
+    // Else-if :-
+    
+    if (integer_input > 0) {
+        println("The entered integer value is Positive.")
+    } else if (integer_input.equals(0)) {
+        println("The entered integer value is Zero.")
+    } else {
+        println("The entered integer value is Negative.")
+    }
+    
+    // Nested-if :-
+
+    if (current_year.mod(4).equals(0)) {
+        if (current_year.mod(100).equals(0)) {
+            if (current_year.mod(400).equals(0)) {
+                println("The current year is a leap-year.")
+            } else {
+                println("The current year is a non-leap year.")
+            }
+        } else {
+            println("The current year is a leap year.")
+        }
+    } else {
+        println("The current year is a non-leap year.")
+    }
+}
