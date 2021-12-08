@@ -1,0 +1,81 @@
+import java.util.Scanner
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the first value: ")
+    val first_integer = user_input.nextInt()
+
+    print("Enter the second value: ")
+    val second_integer = user_input.nextInt()
+
+    print("Enter the boolean: ")
+    val boolean_literal = user_input.nextBoolean()
+
+    // Arithmetic Operations :-
+
+    val sum: Int = first_integer.plus(second_integer)
+    val minus: Int = first_integer.minus(second_integer)
+    val multiply: Int = first_integer.times(second_integer)
+    val division: Int = first_integer.div(second_integer)
+    val modulous: Int = first_integer.mod(second_integer)
+
+    // Relational Operations :-
+
+    val greater: Boolean = first_integer.compareTo(second_integer) > 0
+    val lesser: Boolean = first_integer.compareTo(second_integer) < 0
+    val greater_or_equals: Boolean = first_integer.compareTo(second_integer) >= 0
+    val lesser_or_equal: Boolean = first_integer.compareTo(second_integer) <= 0
+    val equality: Boolean = first_integer.equals(second_integer)
+    val non_equality: Boolean = first_integer.equals(second_integer).not()
+
+    // Logical Operations :-
+
+    val and_operation: Boolean = ((first_integer.compareTo(second_integer) > 0) and (first_integer.compareTo(second_integer) < 0))
+    val or_operation: Boolean = ((first_integer.compareTo(second_integer) >= 0) or (first_integer.compareTo(second_integer) <= 0))
+
+    // Unary Operations :-
+
+    val increment: Int = first_integer.inc()
+    val decrement: Int = second_integer.dec()
+    val unary_plus: Int = first_integer.unaryPlus()
+    val unary_minus: Int = second_integer.unaryMinus()
+    val unary_not: Boolean = boolean_literal.not()
+
+    // Bit-Wise Operations :-
+
+    val bit_wise_and: Int = first_integer.and(second_integer)
+    val bit_wise_or: Int = first_integer.or(second_integer)
+    val bit_wise_inverse: Int = first_integer.inv()
+    val bit_wise_xor: Int = first_integer.xor(second_integer)
+    val left_shift: Int = first_integer shl 0
+    val right_shift: Int = second_integer shr 1
+    val unsigned_right_shift: Int = first_integer ushr 2
+
+    // Results of all operations :-
+
+    println("The addition of $first_integer and $second_integer is: $sum")
+    println("The subtraction of $first_integer and $second_integer is: $minus")
+    println("The product of $first_integer and $second_integer is: $multiply")
+    println("The quotient of $first_integer and $second_integer is: $division")
+    println("The remainder of $first_integer and $second_integer is: $modulous")
+    println("The greater comparison is: $greater")
+    println("The lesser comparison is: $lesser")
+    println("The greater/equals result is: $greater_or_equals")
+    println("The lesser/equals result is: $lesser_or_equal")
+    println("The equality result is: $equality")
+    println("The not equality result is: $non_equality")
+    println("The and result is: $and_operation")
+    println("The or operation is: $or_operation")
+    println("The unary increment is: $increment")
+    println("The unary decrement is: $decrement")
+    println("The unary plus is: $unary_plus")
+    println("The unary minus is: $unary_minus")
+    println("The unary not is: $unary_not")
+    println("The bit-wise and is: $bit_wise_and")
+    println("The bit-wise or is: $bit_wise_or")
+    println("The bit-wise inverse is: $bit_wise_inverse")
+    println("The bit-wise xor is: $bit_wise_xor")
+    println("The left shifted value is: $left_shift")
+    println("The right shifted value is: $right_shift")
+    println("The unsigned right shifted value is: $unsigned_right_shift")
+}
