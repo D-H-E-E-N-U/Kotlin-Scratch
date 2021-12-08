@@ -1,0 +1,55 @@
+import java.util.Scanner
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the value: ")
+    val input_value = user_input.nextInt()
+    
+    // Break :
+    
+    for (values in 0..input_value) {
+        for (value in 0..5) {
+            if (values.equals(5) and value.equals(3)) {
+                break
+            } else{
+                println("values = $values and value = $value")
+            }
+        }
+    }
+    
+    // Continue :
+    
+    for (values in 0..input_value) {
+        for (value in 0..5) {
+            if (values.equals(5) and value.equals(3)) {
+                continue
+            } else{
+                println("values = $values and value = $value")
+            }
+        }
+    }
+    
+    // Labelled Break :
+    
+    outer@ for (values in 0..input_value) {
+        inner@ for (value in 0..5) {
+            if (values.equals(5) and value.equals(3)) {
+                continue@outer
+            } else{
+                println("values = $values and value = $value")
+            }
+        }
+    }
+    
+    // Labelled Continue : 
+
+    outer@ for (values in 0..input_value) {
+        inner@ for (value in 0..5) {
+            if (values.equals(5) and value.equals(3)) {
+                continue@inner
+            } else{
+                println("values = $values and value = $value")
+            }
+        }
+    }
+}
