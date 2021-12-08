@@ -1,0 +1,17 @@
+import java.util.Scanner
+fun addition(first_value: Float, second_value: Float) {
+    val sum = first_value.plus(second_value).toInt()
+    print("The sum of $first_value and $second_value is: $sum")
+}
+
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the first value: ")
+    val first_value = user_input.nextFloat()
+
+    print("Enter the second value: ")
+    val second_value = user_input.nextFloat()
+
+    val function_call = addition(first_value, second_value)
+}
