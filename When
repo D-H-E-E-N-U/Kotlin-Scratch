@@ -1,0 +1,13 @@
+import java.util.Scanner
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the value: ")
+    val input_value = user_input.nextInt()
+
+    when (input_value) {
+        1 -> println("The entered value is One.")
+        2 -> println("The entered value is Two.")
+        else -> println("The entered value is not here.")
+    }
+}
