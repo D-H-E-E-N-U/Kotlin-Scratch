@@ -1,0 +1,35 @@
+import java.util.Scanner
+fun main() {
+    val user_input = Scanner(System.`in`)
+
+    print("Enter the value: ")
+    val input_value = user_input.nextInt()
+
+    // For Loop :~
+
+    for (values in 0..input_value) {
+        println(values)
+    }
+
+    println() // Empty statement.
+
+    // While Loop :~
+
+    var values1: Int = 0
+
+    while (values1 < input_value) {
+        println(values1)
+        values1 = values1.plus(1)
+    }
+
+    println()
+
+    // Do - While Loop :~
+
+    var values2: Int = 0
+
+    do {
+        println(values2)
+        values2 = values2.plus(1)
+    } while (values2 <= input_value)
+}
