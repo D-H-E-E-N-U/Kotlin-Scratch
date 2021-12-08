@@ -1,0 +1,10 @@
+class Abc {
+    fun xyz() {
+        print("Hi, Android..!!")
+    }
+}
+
+fun main() {
+    val class_object = Abc()
+    val function_call = class_object.xyz()
+}
